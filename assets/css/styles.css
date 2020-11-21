@@ -216,3 +216,27 @@ img {
 .header.scrolling .nav__menu {
     background-color: var(--first-color-lighten);
 }
+
+/* SCROLL TO TOP */
+.scrollTop {
+    position: fixed;
+    right: 1rem;
+    bottom: -15%;
+    padding: 0.5rem;
+    background: rgba(123, 111, 113, .7);
+    border-radius: .5rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+    visibility: hidden;
+}
+.scrollTop:hover {
+    background-color: var(--first-color);
+}
+.scrolltop__icon {
+    font-size: 2rem;
+    color: var(--first-color-lighten);
+}
+.scrollTop.show-icon {
+    visibility: visible;
+    bottom: 1.5rem;
+}
