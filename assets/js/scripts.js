@@ -50,5 +50,15 @@ function scrollHeader() {
         header.classList.remove('scrolling');
     }
 }
-
 window.addEventListener('scroll', scrollHeader);
+
+// SHOW SCROLL TOP
+function scrollToTop() {
+    const scrollTop = document.getElementById('scroll-top');
+    if(this.scrollY >= 200) {
+        scrollTop.classList.add('show-icon');
+    } else {
+        scrollTop.classList.remove('show-icon');
+    }
+}
+window.addEventListener('scroll', scrollToTop);
