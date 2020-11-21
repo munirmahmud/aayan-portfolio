@@ -202,3 +202,17 @@ img {
     height: 3px;
     background-color: var(--first-color-light);
 }
+
+/* CHANGE BACKGROUND HEADER */
+.header.scrolling {
+    background-color: var(--first-color-lighten);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+.header.scrolling .nav__logo, 
+.header.scrolling .nav__toggle, 
+.header.scrolling .nav__link {
+    color: var(--first-color-dark);
+} 
+.header.scrolling .nav__menu {
+    background-color: var(--first-color-lighten);
+}
