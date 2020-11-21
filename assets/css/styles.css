@@ -250,8 +250,9 @@ img {
     position: relative;
     height: calc(100vh - var(--header-height));
     grid-template-rows: repeat(2, max-content);
-    align-content: space-around;
+    align-content: start;
     row-gap: 2rem;
+    padding-top: 10rem;
 }
 .home__banner-content {
     border-left: 4px solid var(--first-color-lighten);
@@ -275,18 +276,20 @@ img {
     margin-bottom: var(--mb-3);
 }
 
-.home__img {
+.home__banner-bg {
     position: absolute;
     right: 0;
     bottom: 0;
 }
-.home__img img {
-    width: 240px;
+.home__banner-bg img {
+    width: 100%;
 }
 
 .home__social {
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 10;
 }
 .home__social-icon {
     width: max-content;
