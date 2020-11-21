@@ -40,3 +40,15 @@ function menuActiveOnScroll() {
 }
 
 window.addEventListener('scroll', menuActiveOnScroll);
+
+// CHANGE BACKGROUND HEADER
+function scrollHeader() {
+    const header = document.getElementById('header');
+    if(this.scrollY >= 200) {
+        header.classList.add('scrolling');
+    } else {
+        header.classList.remove('scrolling');
+    }
+}
+
+window.addEventListener('scroll', scrollHeader);
