@@ -282,7 +282,7 @@ img {
     bottom: 0;
 }
 .home__banner-bg img {
-    width: 100%;
+    width: 240px;
 }
 
 .home__social {
@@ -313,4 +313,24 @@ img {
 }
 .btn-light {
     background-color: var(--first-color-light);
+}
+
+/* ABOUT */
+.about__content {
+    text-align: center;
+}
+.aobut__description {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--first-color);
+}
+.about__number {
+    font-size: var(--h1-font-size);
+    color: var(--first-color);
+    display: block;
+}
+.about__img {
+    justify-self: center;
+    width: 220px;
+    border-radius: .5rem;
 }
